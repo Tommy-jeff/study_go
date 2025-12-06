@@ -5,6 +5,7 @@ import (
 
 	"github.com/Tommy-jeff/study_go/math"
 	"github.com/Tommy-jeff/study_go/requests"
+	"github.com/Tommy-jeff/study_go/objects"
 )
 
 func main() {
@@ -61,4 +62,7 @@ func main() {
 	}
 	fmt.Printf("Resultado da soma de todos (anonimous): %v\n", anonimousAddAll(1,2,3,4,5,6,7,8,9,10))
 	
+	// Instances of structs
+	carro1 := objects.NewCar("Ferrari", "F40", 1992)
+	fmt.Println(carro1.GetInfo())
 }
