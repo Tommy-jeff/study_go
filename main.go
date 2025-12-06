@@ -12,7 +12,8 @@ func main() {
 	// studysteps.ErrorHandling()
 	// studysteps.AnonimousFunctions()
 	// studysteps.ControlStructures()
-	studysteps.Pointers()
+	// studysteps.Pointers()
+	studysteps.ControlStructuresComplex()
 
 	
 }
