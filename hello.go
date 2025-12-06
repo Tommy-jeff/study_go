@@ -19,14 +19,17 @@ func main() {
 	// fmt.Printf("\n%T\n%T\n%T\n%T\n%T\n", a, b, c, d, e)
 	// fmt.Printf("\n%v\n%v\n%v\n%v\n%v\n", a, b, c, d, e)
 
-	resultado := math.Add(10, 15)
-	fmt.Printf("\nResultado da soma: %v\n", resultado)
+	resultadoSoma := math.Add(10, 15)
+	fmt.Printf("\nResultado da soma: %v\n", resultadoSoma)
 
-	resultado2 := math.Subtract(30, 12)
-	fmt.Printf("Resultado da subtração: %v\n", resultado2)
+	resultadoSubtracao := math.Subtract(30, 12)
+	fmt.Printf("Resultado da subtração: %v\n", resultadoSubtracao)
 
-	eu := math.Eu
-	fmt.Printf("Valor da variável eu: %v\n", eu)
+	resultadoSomaAll := math.AddAll(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+	fmt.Printf("Resultado da soma de todos: %v\n", resultadoSomaAll)
+
+	varEu := math.Eu
+	fmt.Printf("Valor da variável eu: %v\n", varEu)
 
 
 	// HTTP Request with error handling
@@ -42,4 +45,20 @@ func main() {
 	
 	fmt.Printf("Response status code: %v\n %v\n", res2.StatusCode, res2.Header)
 
+
+	// Anonimous function
+	anonimousFunc := func(name string) string{
+		return fmt.Sprintf("Hello %v, from anonimous function!", name)
+	}
+	fmt.Println(anonimousFunc("Tommy"))
+	
+	// Anonimous add all funcition
+	anonimousAddAll := func(numbers ...int) (result int){
+		for _, v := range numbers {
+			result += v
+		}
+		return
+	}
+	fmt.Printf("Resultado da soma de todos (anonimous): %v\n", anonimousAddAll(1,2,3,4,5,6,7,8,9,10))
+	
 }
