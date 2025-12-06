@@ -19,6 +19,8 @@ func NewCar(marca string, modelo string, ano int) Carro {
 }
 
 // GetInfo returns a formatted string containing the car's information.
-func (c Carro) GetInfo() string {
+func (c *Carro) GetInfo() string {
+	c.Ano = 2050
+
 	return fmt.Sprintf("Carro Marca: %s, Modelo: %s, Ano: %d", c.Marca, c.Modelo, c.Ano)
 }
