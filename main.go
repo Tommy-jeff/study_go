@@ -1,9 +1,8 @@
 package main
 
 import (
-	// "github.com/Tommy-jeff/study_go/study_steps"
-
-	"github.com/Tommy-jeff/study_go/study_steps/go_routines"
+	"github.com/Tommy-jeff/study_go/study_steps"
+	// "github.com/Tommy-jeff/study_go/study_steps/go_routines"
 )
 
 func main() {
@@ -21,6 +20,8 @@ func main() {
 	// goroutines.ChannelsExemple()
 	// goroutines.ChannelsExemple2()
 	// goroutines.ChannelsExemple3()
-	goroutines.SuperExemple()
+	// goroutines.SuperExemple()
+
+	studysteps.GenericsExample()
 	
 }
