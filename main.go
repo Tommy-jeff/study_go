@@ -17,6 +17,10 @@ func main() {
 	// studysteps.ControlStructuresComplex()
 
 	// goroutines.SimpleExemple()
-	goroutines.CooperativePreemptive()
+	// goroutines.CooperativePreemptive()
+	// goroutines.ChannelsExemple()
+	// goroutines.ChannelsExemple2()
+	// goroutines.ChannelsExemple3()
+	goroutines.SuperExemple()
 	
 }

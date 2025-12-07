@@ -17,10 +17,12 @@ func CooperativePreemptive() {
 
 	go func() {
 		for {
-
+			if true {
+				
+			}
 		}
 	}()
-	
+
 	time.Sleep(time.Second)
 	fmt.Println("Esta mensagem será exibida mesmo com a goroutine em loop infinito.")
 }
